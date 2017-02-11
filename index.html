@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="calcApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+
+
+<body class="body" ng-controller="appController">
+    <div>
+        <input class="display1" type="text" ng-model="DISPLAY">
+        <input class="display2" type="text" ng-model="rez">
+    </div>
+
+
+<div class="figures">
+    <div>
+    <button class ="one" ng-value = "one" ng-click = "click1()"> 1</button>
+    <button class ="two" ng-value ="two" ng-click = "click2()">2</button>
+    <button class ="three" ng-value ="three" ng-click = "click3()">3</button>
+
+</div>
+
+    <div>
+        <button class ="four" ng-value="four" ng-click = "click4()">4</button>
+        <button class ="five" ng-value="five" ng-click = "click5()">5</button>
+        <button class ="six" ng-value="six" ng-click = "click6()">6</button>
+    </div>
+
+    <div>
+        <button class ="seven" ng-value="seven" ng-click = "click7()">7</button>
+        <button class ="eight" ng-value="eight" ng-click = "click8()">8</button>
+        <button class ="nine" ng-value="nine" ng-click = "click9()">9</button>
+    </div>
+
+    <div class="math">
+        <button class ="plas" ng-value = "plas" ng-click = "clickPlas()"> + </button>
+        <button class ="minus" ng-value ="minus" ng-click = "clickMin()"> - </button>
+        <button class ="clear" ng-value ="clear" ng-click = "clickClear()"> C </button>
+        <button class ="eqv" ng-value ="eqv" ng-click = "clickEqv()"> = </button>
+
+    </div>
+    <div>
+        <button class ="div" ng-value ="div" ng-click = "clickDiv()"> / </button>
+        <button class ="mult" ng-value ="mult" ng-click = "clickMult()"> x </button>
+        <button class ="bracketL" ng-value ="bracketL" ng-click = "clickBracketL()"> ( </button>
+        <button class ="bracketR" ng-value ="bracketR" ng-click = "clickBracketR()"> ) </button>
+        <button class ="dot" ng-value ="dot" ng-click = "clickDot()"> . </button>
+    </div>
+</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js">
+    </script>
+    <script src="mainCalc.js">
+    </script>
+</body>
+</html>
